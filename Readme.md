@@ -1,10 +1,10 @@
 # Java Neural Network - Letter Recognition (F, E, U)
 
-This is a simple Java Swing application that uses a feedforward neural network to recognize handwritten letters: **F**, **E**, and **U**. It includes a drawing interface, training functionality, and testing capability using backpropagation.
+Neural network to recognize handwritten letters: **F**, **E**, and **U**. It includes a drawing interface, training functionality, and testing capability using backpropagation.
 
 ## ✨ Features
 
-- Neural network built from scratch (no external ML libraries)
+- Neural network built from scratch
 - GUI with drawing panel for letter input
 - Train/test your own samples
 - Recognizes letters **F**, **E**, and **U**
@@ -13,7 +13,7 @@ This is a simple Java Swing application that uses a feedforward neural network t
 ## 🧠 How It Works
 
 - The drawing panel captures user input on an 8x8 grid.
-- Each grid cell is turned into a grayscale feature (black pixel ratio).
+- Each grid cell is turned into a grayscale feature.
 - A 3-layer neural network is used:
   - Input layer: 64 neurons (8x8 grid)
   - Hidden layer: 16 neurons
@@ -35,9 +35,5 @@ This is a simple Java Swing application that uses a feedforward neural network t
 - Training data is saved to `dane_uczace.txt`  
 - Test data is saved to `dane_testowe.txt`  
 - Format: one letter per line with its 64 normalized features  
-
-## 🔧 Requirements
-
-- Java SE 8 or higher  
-- No third-party dependencies  
+  
 
